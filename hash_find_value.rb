@@ -7,3 +7,10 @@
 sample_hash = {:a => 100, :b => 200, :c => 300, :d => 400, :e => rand(200), :f => 600, :g => 0 }
 
 p "Enter an integer to find:"
+number = gets.chomp.to_i
+
+if sample_hash.values.include? number
+  p number.to_s + ' is under the key: ' + sample_hash.key(number).to_s
+elsif 
+  p 'Could not find the integer ' + number.to_s
+end
